@@ -36,11 +36,11 @@ The search stops when it either finds the target person or when the first and la
 
 The third search has you call the RunRecursiveSearch. Here is the prototype.
 
-__3) bool RunRecursiveSearch(Person folks[], int total, string target, int *position, int *pNumCompares);__
+#### __3) bool RunRecursiveSearch(Person folks[], int total, string target, int *position, int *pNumCompares);__
 
 The RunRecursiveSearch function calls a recursive version of the binary search. Its prototype is:
 
-__bool RecursiveBinarySearch(Person folks[], string target, int first, int last, int *position, int *pNumCompares);__
+#### __bool RecursiveBinarySearch(Person folks[], string target, int first, int last, int *position, int *pNumCompares);__
 
 The recursive function calculates the midpoint value and checks to see if it is the target. If it is, the position is returned. If not, the recursive function determines which section of the list to check again and calls the recursive function again. You will need to include a stopping condition in this function so that your functions aren’t stuck in an infinite recursive call sequence.
 
